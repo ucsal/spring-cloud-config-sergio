@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: account-service       # mesmo nome usado no config-server (/account-service/dev)
+  profiles:
+    active: dev                 # vai buscar o account-service-dev.yml
+  config:
+    import: "configserver:http://localhost:8888"  # 👈 JEITO NOVO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
