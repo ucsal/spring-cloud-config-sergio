@@ -1,0 +1,10 @@
+message: "Configuração do ambiente DEV - Account Service"
+
+bank:
+  name: "Banco Digital UCSAL - Dev"
+  apiUrl: "https://dev.api.bancodigital.com"
+  db:
+    host: "localhost"
+    port: 5432
+    username: "account_dev"
+    password: "${DB_PASSWORD_DEV}"
